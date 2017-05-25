@@ -1,0 +1,1034 @@
+/*
+ Aufgabe: (11)
+Name: (Alicia Burger)
+Matrikel: (254604)
+Datum: (14.01.2017)
+Hiermit versichere ich, dass ich diesen
+Code selbst geschrieben habe. Er wurde
+nicht kopiert und auch nicht diktiert
+*/
+
+/*Layout*/
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+*{
+	padding:0;
+	margin:0;
+} 
+
+body {
+    background-color: #363636;	
+}
+
+/*link farben*/	
+a:link {color: #a3a3a3;}
+a:visited {color: #a3a3a3;}
+a:hover {color: #01c6ff;}
+a:active {color: #01c6ff;}
+a{text-decoration: none;}
+.farbigerLink{color: #01c6ff;	
+}
+/*---------------------------------------------------------------------------------------------------*/
+	/*HEADER*/
+	
+header {
+	width: 100%;		
+}
+#navfeld{
+	position:fixed;
+	background-color: rgba(0, 0, 0, 0.25);
+	width:100%;
+	z-index:200 ;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+/*---------------------------------------*/
+	/*Menü */
+	
+.burgerIcon {	
+    width: 35px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 6px;
+    margin-left: 25px%;
+	margin-bottom:10px;
+}
+/* .burgerIcon: hover {	 */
+/*      width: 35px; */
+/*     height: 5px; */
+/*     background-color: rgba(1, 198, 255, 0.9); */
+/*     margin: 6px; */
+/*     margin-left: 25px%; */
+/* 	margin-bottom:10px; */
+   
+    
+/* } */
+#menueGr{
+	display:none;
+}	
+#klappmenue li {
+	text-align:center;
+	margin-left:1%;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	color: #a3a3a3;
+	font-size:200%;
+	list-style-type: none;
+	}
+li a img{
+		height: 1.5em;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 10px;
+	}
+#abkuerzelKlB{
+	height: 1.5em;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 10px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*MAIN*/
+
+	/*Hintergrundbild+Text*/
+		
+#bildHintergrund{    
+	background-image: url(Bilder/Hintergrund_Home.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	
+}		 
+#aliciaburger{
+	width:49%;
+	margin-left: 26%;
+	margin-top: 17%;
+}
+.anker{
+	height:51px;
+
+}
+#ankerPortfolio{position: relative;
+}
+
+/*---------------------------------------*/
+	/*Überschriften*/
+	
+#uebersSect{
+	width: 100%;
+	background-color: #282828;
+	padding-top: 0px;
+	box-shadow: 0px 1px 5px black;
+	
+}
+.ueberschriftGr{
+	font-family: Century Gothic,'Questrial', sans-serif;
+	font-size:1.75em;
+	padding-top:50px;
+	width:100%;
+	color:#e4e4e4;
+	text-align: center;
+}
+
+.ueberschriftKl{
+	font-family: Century Gothic,'Questrial', sans-serif;
+	font-size:1em;
+	margin-top:5px; 
+	color:#e4e4e4;
+	text-align: center;
+}
+.semesterZahl{
+	font-family: Century Gothic,'Questrial', sans-serif;
+	font-size:1em; 
+	color:#a3a3a3;
+	float:left;
+	text-align: center;
+	margin-top:70px;
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
+	width:95%;
+}
+#ueberBox{
+	position: relative;
+	z-index: 110;
+}
+#ankerProjects{
+	position: relative;
+	z-index: 100;
+}
+
+/*---------------------------------------*/
+	/*photography + projects + about*/
+
+	
+
+	
+#projSect{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+#projects{
+	margin-bottom:10px;
+}
+
+.boxHoch{
+	width: 65%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.boxQuer{
+	width: 90%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.BoxQuadrat{
+	width: 75%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+
+#fuerstbox{
+	margin-top:5px;
+}
+#ballbox{
+	margin-top:5px;
+}
+#awarebox{
+	margin-top:5px;
+}
+.popUp{
+	width: 100%;
+	height:100%;
+	background-color: #282828 !important;
+	box-shadow: 2px 2px 5px black;
+	display: none;	
+
+  	position: fixed;
+ 	 z-index: 250;
+ 	 padding-top: 50px;
+ 	 left: 0;
+  	 top: 0;
+ 	 overflow: auto;
+ 	 background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+
+/*position: relative;*/
+}
+.anzahl {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top: -22px;
+  padding: 16px;
+  color: #d7d7d7;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:120%;
+	text-align:center;
+	color: #d7d7d7;
+	margin-left:20%;
+	margin-top:15px;
+  position: absolute;
+  top: 0;
+} 
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 2px;
+  margin-bottom:20px;
+  background-color: #a3a3a3;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.punkt{
+	text-align: center;
+	margin-bottom:50px;
+}
+.active, .dot:hover {
+  background-color: #01c6ff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* The Close Button */
+.close {
+  color: #d7d7d7;
+  position: absolute;
+
+  margin-right:20%;
+  top:8px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #01c6ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.boxQGr{
+	margin-left:20%;
+	margin-right:20%;
+	margin-bottom:10px;
+	width:60%;
+}
+.boxHGr{
+	margin-left:30%;
+	margin-right:30%;
+	margin-bottom:10px;
+	width:40%;
+
+}
+.boxTextZusatz{
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+
+	margin-bottom:10px;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:75%;
+	text-align:center;
+	color: #a3a3a3;
+}
+.boxText{
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+	margin-top:20px;
+	margin-bottom:10px;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:75%;
+	text-align:center;
+	color: #a3a3a3;
+}
+
+.einzelBildP{
+	
+}
+.boxHoch{
+	width: 65%;
+	
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.boxQuer{
+	width: 90%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.BoxQuadrat{
+	width: 75%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.boxHochPh{
+	width: 65%;
+	
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.boxQuerPh{
+	width: 90%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.BoxQuadratPh{
+	width: 75%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+
+/*.spalte1v3{
+	margin-left: auto;
+    margin-right: auto;
+	background-color: #282828;
+	width:90%;
+}
+.spalte2v3{
+	margin-left: auto;
+    margin-right: auto;
+	background-color: #282828;
+	width:80%;
+}*/
+/*.spalte3v3{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-bottom:15px;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:120%;
+	text-align:center;
+	background-color: #282828;
+	color: #a3a3a3;
+	width:80%;
+}*/
+
+#ankerPhotos{
+	display:box;
+	float:right;
+	margin-top:20px;
+	margin-bottom:30px;
+	width:100%;
+	position: relative;
+	z-index: 110;
+	}
+
+
+
+#photoSect{
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+#photos{
+	display:box;
+	float:right;
+	margin-top:20px;
+	margin-bottom:40px;
+	width:100%;
+	position: relative;
+	z-index: 110;
+}
+
+
+
+#aboutSect{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#ankerAbout{
+	float:right;
+	margin-bottom:36px;
+	width:100%;
+	position: relative;
+	z-index: 110;
+	}
+#about{
+	display:box;
+	float:right;
+	margin-bottom:30px;
+	padding-bottom:50px;
+	width:100%;
+	position: relative;
+	z-index: 110;
+	background-color: #282828;
+	box-shadow: 0px 1px 5px black;
+	
+}
+#ich{margin-left:2.5%;
+margin-right:2.5%;
+margin-bottom:2.5%;
+	width: 95%;
+	float:left;
+	
+}
+#aboutDiv{
+	width: 95%;
+	margin:2.5%;
+	margin-left:10px;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:120%;
+	text-align:center;
+	color: #a3a3a3;
+	float:left;
+}
+
+#listenDiv{
+	float: left;
+	 margin-left: auto;
+    margin-right: auto;
+    padding-bottom:50px;
+  
+
+}
+.liste{
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:120%;	
+	color: #a3a3a3;	
+	margin-top:20px;
+}
+.listbox{
+	float:left;
+	width:100%;
+	margin-bottom:30px;
+	margin-left: 30px;
+}
+#skills{
+	width: 100%;
+	float:left;	
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:150%;
+	text-align:center;
+	color:#e4e4e4;
+	margin-top:50px;
+	margin-bottom: 35px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*FOOTER*/
+
+footer{
+	margin-top:10px;
+	background-color: #282828;
+width:100%;}
+#contact{
+	display:box;
+	float:right;
+	/*margin-top:40px;*/
+	padding-bottom:50px;
+	width:100%;
+	position: relative;
+	z-index: 110;
+	background-color: #282828;
+	box-shadow: 0px 1px 5px black;
+	
+}
+#contactAnker{
+	float:right;
+	margin-bottom:36px;
+	width:100%;
+	position: relative;
+	z-index: 110;
+}
+.footerText{
+	width: 70%;
+	margin-top:2.5%;
+	padding-left:10px;
+	text-align: left;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:120%;
+	text-align:left;
+	color: #a3a3a3;
+	float: left;
+}
+#eMail{
+	width:100%;
+	float: left;
+
+}
+#insta{
+	width:100%;
+	float: left;5px;
+	padding-top: 10px;	
+}
+#facebook{
+	width:100%;
+	float: left;
+	padding-top: 10px;	
+
+	margin-top:2.5%;
+}
+#footerbox{margin-left:0;
+
+margin-bottom:0;
+	float: left;
+	width: 100%;
+	background-color: #282828;
+}
+
+#mailIcon{
+background-color: #282828;
+	
+	width:50px;
+}
+#istaIcon{
+	background-color: #282828;
+	
+	width:50px;
+	
+}
+#facebookIcon{
+	padding-left:0;
+	width:50px;
+}
+#hfuIcon{
+
+	
+	width:200px;
+	padding-left: 45%;
+	padding-right:10px;
+	padding-top:40px;
+	padding-bottom:5px;
+	float: right;
+	
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*Breakpoints*/
+@media screen and (min-width:  350px){
+	/*MAIN*/
+.ueberschriftGr{	
+		font-size:2.4em;
+	}
+.ueberschriftKl{	
+		font-size:1em;
+	}	
+.boxText{
+	font-size:90%;
+}
+.boxTextZusatz{
+	font-size:90%;
+}
+
+
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:  570px){
+	
+	 
+ /*ab  570 px */
+	 
+	/*header*/
+	.burgerIcon {	
+	    width: 35px;
+	    height: 5px;
+	    background-color: rgba(255, 255, 255, 0.9);
+	    margin: 6px;
+	    margin-left: 25px%;
+		margin-bottom:10px;
+	}
+	/*---------------------------------------*/
+	/*main*/
+	.ueberschriftGr{	
+		font-size:4em;
+	}
+	.boxHOut{
+	height:230px;
+float:left;
+	width: 20%;
+}
+.boxQOut{
+	height:230px;
+	float:left;
+	width: 40%;
+}
+.bees{
+	height:230px;
+	float:left;
+	width: 30%;
+}
+.boxHoch{
+	width: 90%;
+	margin:15px;
+	margin-top:40px;
+	float: left;
+	position: relative;
+	z-index:100;
+
+
+}
+.boxQuer{
+	width: 95%;
+	margin:15px;
+	margin-top:40px;
+	float: left;
+	position: relative;
+	z-index:100;
+}
+.BoxQuadrat{
+	width: 90%;
+	margin:2.5%;
+	margin-top:40px;
+	float: left;
+	position: relative;
+	z-index:100;
+}
+
+/* .boxHochPh{ */
+/* 	width: 65%; */
+	
+/* 	margin-top:40px; */
+/* 	display: block; */
+/*     margin-left: auto; */
+/*     margin-right: auto; */
+/*     box-shadow: 2px 2px 5px black; */
+/* } */
+
+.boxHochPh{
+	width:30%;
+	margin:2.5%;
+	margin-top:40px;
+	float: left;
+	position: relative;
+	z-index:100;
+
+
+}
+.boxQuerPh{
+	width: 45%;
+	margin:2.5%;
+	margin-top:40px;
+	float: left;
+	position: relative;
+	z-index:100;
+}
+
+#ente {
+	clear:left;
+}
+.BoxQuadratPh{
+	width: 35%;
+	margin:2.5%;
+	margin-top:40px;
+	float: left;
+	position: relative;
+	z-index:100;
+}
+
+.popUp{float: left;
+	width: 100%;
+	background-color: #282828;
+	box-shadow: 2px 2px 5px black;
+	display: none;
+}
+.boxText{
+	font-size:100%;
+	width:80%;
+}
+.boxTextZusatz{
+	font-size:100%;
+	width:80%;
+}
+
+#listenDiv{
+	float: left;
+	width: 100%;
+}
+.liste{
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:150%;	
+	color: #a3a3a3;	
+}
+.listbox{
+	float:left;
+	width:25%;
+	margin-left: 4%;
+}
+#aboutDiv{
+	font-size:150%;
+
+}
+	/*---------------------------------------*/
+	/*footer*/
+.footerText{	
+	
+	font-size:24px;
+}
+
+}
+/*---------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:  768px){
+
+ 
+ /*ab  768 px */
+	 /*Header*/
+	
+	#burger{
+		display:none;
+	}
+	
+	#klappmenue{
+		display:none !important;
+	}
+	#menueGr{
+		display: inline;	
+	}
+	#boxMenueGr{
+		display: block;	
+		margin-left:15%;
+		margin-top:15px;
+		margin-bottom:15px;
+	}
+
+	#menueGr li {
+		float:left;
+		margin-left:2%;
+		font-family: Candara, 'Hind Siliguri', sans-serif;
+		color: #a3a3a3;
+		font-size:180%;
+		list-style-type: none;
+		}
+	#abkMargTop{
+		margin-top:5px;
+	}
+	#abkuerzelGr{
+		margin-left: 0px;
+		height:2em;
+		
+	}
+	#abkuerzelGrB:hover {
+			opacity: 1;
+			
+	}
+	#abkuerzelGrB{
+		height:2em;
+		margin-left: 0px;
+		opacity: 0;
+		position: absolute;
+	}
+	
+	
+/*---------------------------------------*/
+/*Main*/
+
+.boxText{
+
+	width:90%;
+}
+.boxTextZusatz{
+	
+	width:90%;
+}
+
+.boxHGr{
+	margin-left:35%;
+	margin-right:auto;
+	width:300px;
+}
+.boxHOut{
+	height:300px;
+
+}
+.boxQOut{
+	height:300px;
+
+}
+.bees{
+	height:200px;
+}
+
+.boxHoch{
+	width: 90%;
+	
+
+
+}
+.boxQuer{
+	width: 95%;
+	
+}
+.BoxQuadrat{
+	width: 90%;
+	
+}
+.boxHochPh{
+	width: 20.5%;
+}
+.boxQuer{ph
+	width: 42%;
+}
+.BoxQuadratPh{
+	width: 28%;
+}
+
+.anker{
+	height:96px;
+}
+#skills{
+	font-size: 2em;
+}
+#ich{
+	width: 25%;
+}
+#aboutDiv{
+	width: 65%;
+	margin:2.5%;
+	font-size:150%;
+	text-align:center;
+
+}
+#ankerAbout{
+	margin-top:20px;
+	margin-bottom:110px;
+
+	}
+/*footer*/
+#contactAnker{
+	margin-top:20px;
+	margin-bottom:110px;
+}
+#hfu{
+	width:20%;
+}
+	}
+
+/*---------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:  1024px){
+
+/*Header*/
+#boxMenueGr{
+		margin-left:20%;
+	}
+
+	#menueGr li {
+		margin-left:1%;
+		font-size:300%;
+		}
+		
+.anker{
+	height:128px;
+}		
+
+/*Main*/
+.boxHGr{
+	margin-left:38%;
+	margin-right:auto;
+
+}
+	.boxHOut{
+	height:370px;
+
+}
+.boxQOut{
+	height:370px;
+
+}
+.bees{
+	height:300px;
+}
+.boxHochPh{
+	width: 23%;
+}
+.boxQuerPh{
+	width: 28%;
+}
+.BoxQuadratPh{
+	width: 25%;	
+}
+#ente {
+	clear:none;
+}
+/* ------------------------------------------------------------ */
+@media screen and (min-width:  1280px){
+
+	 */
+
+/*Main*/
+	.boxHOut{
+	height:450px;
+
+}
+.boxQOut{
+	height:450px;
+
+}
+.bees{
+	height:370px;
+}
+.boxHochPh{
+	width: 23%;
+}
+.boxQuerPh{
+	width: 28%;
+}
+.BoxQuadratPh{
+	width: 25%;
+}
+/* ----------------------------------------------------------------------- */
+@media screen and (min-width:  1590px){
+
+	 */
+
+/*Main*/
+	.boxHOut{
+	height:550px;
+
+}
+.boxQOut{
+	height:550px;
+
+}
+.bees{
+	height:500px;
+}
+
+}
+
+
+
+
