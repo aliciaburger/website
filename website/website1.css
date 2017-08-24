@@ -147,9 +147,14 @@ li a img{
 	text-align: center;
 	margin-top:70px;
 	margin-bottom:20px;
-	margin-left:auto;
-	margin-right:auto;
-	width:95%;
+	padding-left:auto;
+	padding-right:auto;
+	display: block;
+	width:100%;
+}
+#semester1{
+	margin-top:20px;
+	
 }
 #ueberBox{
 	position: relative;
@@ -366,7 +371,17 @@ li a img{
 	text-align:center;
 	color: #a3a3a3;
 }
-
+.boxTextOut{
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+	margin-top:20px;
+	margin-bottom:10px;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:75%;
+	text-align:center;
+	color: #a3a3a3;
+}
 .einzelBildP{
 	
 }
@@ -653,7 +668,9 @@ background-color: #282828;
 .boxTextZusatz{
 	font-size:90%;
 }
-
+.boxTextOut{
+	font-size:90%;
+}
 
 }
 
@@ -774,7 +791,10 @@ float:left;
 	font-size:100%;
 	width:80%;
 }
-
+.boxTextOut{
+	font-size:100%;
+	width:80%;
+}
 #listenDiv{
 	float: left;
 	width: 100%;
@@ -791,8 +811,12 @@ float:left;
 }
 #aboutDiv{
 	font-size:150%;
-
 }
+
+#semester1{
+	margin-top:200px;
+	
+}	
 	/*---------------------------------------*/
 	/*footer*/
 .footerText{	
@@ -927,6 +951,12 @@ float:left;
 	margin-bottom:110px;
 
 	}
+#semester1{
+	margin-top:150px;
+	
+}	
+
+
 /*footer*/
 #contactAnker{
 	margin-top:20px;
@@ -1009,6 +1039,10 @@ float:left;
 .BoxQuadratPh{
 	width: 25%;
 }
+#semester1{
+	margin-top:220px;
+	
+}	
 /* ----------------------------------------------------------------------- */
 @media screen and (min-width:  1590px){
 
