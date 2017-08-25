@@ -305,7 +305,34 @@ function init(): void {
         h = true;
     }
 
+//    Pop-Up-Fenster geschenkefressen  
 
+    var i: boolean = true;
+
+
+
+
+    function bild9(): void {
+        document.getElementById("popUpgeschenke").style.display = "none";
+        if (i == false) {
+            document.getElementById("popUpgeschenke").style.display = "none";
+            document.getElementById("geschenkefressenbox").style.backgroundColor = "#363636";
+            i = true;
+        }
+        else {
+            document.getElementById("popUpgeschenke").style.display = "block";
+            document.getElementById("geschenkefressenbox").style.backgroundColor = "#282828";
+            i = false;
+
+        }
+    }
+    //    popupFenster schließen 
+
+    function bild9c(): void {
+        document.getElementById("popUpgeschenke").style.display = "none";
+        document.getElementById("geschenkefressenbox").style.backgroundColor = "#363636";
+        i = true;
+    }
 
 
 
