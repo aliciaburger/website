@@ -109,11 +109,11 @@ nicht kopiert und auch nicht diktiert -->
 <!-- 		-------------------------------------- -->
 
 				<!-- GeschenkefressenBox -->
-<!-- 			<div class="boxQOut"> -->
+ 			<div class="boxHOut"> 
 			<div id="geschenkefressenbox" class="geschenkeB">
 				<div>
 					<a href="#geschenke"><img src="Bilder/geschenkefressen.PNG"
-						class="boxHOut" id="geschenke" /></a>
+						class="boxHoch" id="geschenke" /></a>
 						<div class="boxText">
 							<p> canvas Animation</p>
 						</div>
@@ -165,7 +165,7 @@ nicht kopiert und auch nicht diktiert -->
 					</div>
 	
 				</div>
-<!-- 			</div> -->
+			</div> 
 
 
 
@@ -1138,8 +1138,9 @@ nicht kopiert und auch nicht diktiert -->
                  anzahl7[slide7 - 1].style.display = "block";
                  dots7[slide7 - 1].className += "active";
 
-             }   
-          // Slideshow BEE
+             }  
+             
+// Slideshow Bee
              var slide8 = 1;
              var n8 = 1;
              document.getElementById("bee").addEventListener("click", bee);
@@ -1177,7 +1178,44 @@ nicht kopiert und auch nicht diktiert -->
                  dots8[slide8 - 1].className += "active";
 
              } 
-              
+// Slideshow Geschenkefressen
+             var slide9 = 1;
+             var n9 = 1;
+             document.getElementById("geschenke").addEventListener("click", geschenke);
+             function geschenke() {
+                 showSlides9(slide9);
+                 nSlide9(n9);
+             }
+
+             
+
+             function plusSlides9(n9) {
+                 showSlides9(slide9 += n9);
+                 console.log("plusSlides9", n9);
+             }
+
+
+             function nSlide9(n9) {
+                 showSlides9(slide9 = n9);
+                 console.log("nSlide9", n9);
+             }
+
+             function showSlides9(n9) {
+                 console.log("showSlides9", n9);
+                 var h;
+                 var anzahl9 = document.getElementsByClassName("anzahl9");
+                 var dots9 = document.getElementsByClassName("dot9");
+                 if (n9 > anzahl9.length) { slide9 = 1 }
+                 if (n9 < 1) { slide9 = anzahl9.length }
+
+                 for (h = 0; h < anzahl9.length; h++) {
+                     anzahl9[h].style.display = "none";
+
+                 }
+                 anzahl9[slide9 - 1].style.display = "block";
+                 dots9[slide9 - 1].className += "active";
+
+             }   
 			
  	</script> 
     </body>

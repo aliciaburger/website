@@ -37,6 +37,8 @@ function init() {
     document.getElementById("cl7").addEventListener("click", bild7c);
     document.getElementById("bee").addEventListener("click", bild8);
     document.getElementById("cl8").addEventListener("click", bild8c);
+    document.getElementById("geschenke").addEventListener("click", bild9);
+    document.getElementById("cl9").addEventListener("click", bild9c);
 }
 /* BurgerMenu */
 function burgerMenue() {

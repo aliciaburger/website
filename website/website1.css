@@ -197,7 +197,7 @@ li a img{
     margin-right: auto;
     box-shadow: 2px 2px 5px black;
 }
-.BoxQuadrat{
+.boxQuadrat{
 	width: 75%;
 	margin-top:40px;
 	display: block;
@@ -402,7 +402,7 @@ li a img{
     margin-right: auto;
     box-shadow: 2px 2px 5px black;
 }
-.BoxQuadrat{
+.boxQuadrat{
 	width: 75%;
 	margin-top:40px;
 	display: block;
@@ -427,7 +427,7 @@ li a img{
     margin-right: auto;
     box-shadow: 2px 2px 5px black;
 }
-.BoxQuadratPh{
+.boxQuadratPh{
 	width: 75%;
 	margin-top:40px;
 	display: block;
@@ -727,7 +727,7 @@ float:left;
 	position: relative;
 	z-index:100;
 }
-.BoxQuadrat{
+.boxQuadrat{
 	width: 90%;
 	margin:2.5%;
 	margin-top:40px;
