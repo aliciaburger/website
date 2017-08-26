@@ -108,7 +108,58 @@ nicht kopiert und auch nicht diktiert -->
 		
 <!-- 		-------------------------------------- -->
 
-				<!-- GeschenkefressenBox -->
+
+<!-- AVBox -->
+ 			<div class="boxHOut"> 
+			<div id="avbox" class="avF">
+				<div>
+					<a href="#av"><img src="Bilder/geschenkefressen.PNG"
+						class="boxHoch" id="av" /></a>
+						<div class="boxText">
+							<p> canvas Animation</p>
+						</div>
+				</div>
+
+				<div id="popUpav" class="popUp">
+
+					<div class="modal-content">
+
+						<span class="close cursor" id="cl10">&times;</span>
+
+
+						<div class="anzahl10 fade">
+							<div class="numbertext">1 / 7</div>
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/lIOMF2-QfY8" frameborder="0" allowfullscreen></iframe>				
+							
+							
+						<p class="boxTextZusatz">3D modeling with blender for the subject "Computergafik und 3D Moddelierung"</p>
+					
+						</div>
+						<div class="anzahl10 fade">
+							<div class="numbertext">2 / 7</div>
+							
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/eZyJmXmsOXE" frameborder="0" allowfullscreen></iframe>				
+							
+							<div class="boxTextZusatz">
+							<a  class="farbigerLink" href= "https://aliciaburger.github.io/EIA2/Aufgabe 12/start.html">Hier geht es zu dem Spiel</a>
+							</div> 
+							</div>
+						<div class="boxText">
+						<p> HTML canvas basierendes Spiel mit Typescript Programmiert. Idee, Konzeption, Entwurf der Interaktionsobjekte und Umsetzung.</p>
+					</div>						
+						<a class="prev" onclick="plusSlides10(-1)">&#10094;</a> 
+						<a class="next" onclick="plusSlides10(1)">&#10095;</a>
+					</div>
+					<div class="punkt">
+						<span class="dot" class="dot10" onclick="nSlide10(1)"></span> <span
+							class="dot" class="dot10" onclick="nSlide10(2)"></span> 
+					</div>
+	
+				</div>
+			</div> 
+</div>
+
+<!-- GeschenkefressenBox -->
  			<div class="boxHOut"> 
 			<div id="geschenkefressenbox" class="geschenkeB">
 				<div>
@@ -331,7 +382,7 @@ nicht kopiert und auch nicht diktiert -->
 						<div class="anzahl7 fade">
 							<div class="numbertext">7 / 7</div>						
 							<video controls="" class="boxHGr" >
-								<source src="Videos/beesMovie.mp4" type="video/mp4">
+								<source src="Videos/Video Prototype.mp4" type="video/mp4">
 								Your browser does not support the html5 video tag.
 							</video>		
 							<p class="boxTextZusatz">Video zur benutzng der Website.</p>
@@ -363,7 +414,7 @@ nicht kopiert und auch nicht diktiert -->
 				</div>
 			</div>			
 				<!-- BeeBox -->
-<!-- 			<div class="boxQOut"> -->
+ 			<div class="boxQOut"> 
 			<div id="beebox" class="bees">
 				<div>
 					<a href="#bee"><img src="Bilder/EIA2 bee.PNG"
@@ -419,7 +470,7 @@ nicht kopiert und auch nicht diktiert -->
 					</div>
 	
 				</div>
-<!-- 			</div> -->
+ 			</div> 
 		<!-- 		-------------------------------------- -->	
 			
 			
@@ -1228,7 +1279,46 @@ nicht kopiert und auch nicht diktiert -->
                  anzahl9[slide9 - 1].style.display = "block";
                  dots9[slide9 - 1].className += "active";
 
+             }
+// Slideshow AV
+             var slide10 = 1;
+             var n10 = 1;
+             document.getElementById("av").addEventListener("click", av);
+             function av() {
+                 showSlides10(slide10);
+                 nSlide9(n10);
+             }
+
+             
+
+             function plusSlides10(n10) {
+                 showSlides10(slide10 += n10);
+                 console.log("plusSlides9", n9);
+             }
+
+
+             function nSlide10(n10) {
+                 showSlides10(slide10 = n10);
+                 console.log("nSlide10", n10);
+             }
+
+             function showSlides10(n10) {
+                 console.log("showSlides10", n10);
+                 var h;
+                 var anzahl10 = document.getElementsByClassName("anzahl10");
+                 var dots10 = document.getElementsByClassName("dot10");
+                 if (n10 > anzahl10.length) { slide10 = 1 }
+                 if (n10 < 1) { slide10 = anzahl10.length }
+
+                 for (h = 0; h < anzahl10.length; h++) {
+                     anzahl10[h].style.display = "none";
+
+                 }
+                 anzahl10[slide10 - 1].style.display = "block";
+                 dots10[slide10 - 1].className += "active";
+
              }   
+            
 			
  	</script> 
     </body>

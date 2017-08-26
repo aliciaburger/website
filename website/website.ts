@@ -47,6 +47,8 @@ function init(): void {
     document.getElementById("cl8").addEventListener("click", bild8c);
     document.getElementById("geschenke").addEventListener("click", bild9);
     document.getElementById("cl9").addEventListener("click", bild9c);
+    document.getElementById("av").addEventListener("click", bild10);
+    document.getElementById("cl10").addEventListener("click", bild10c);
 }
 
 
@@ -337,7 +339,34 @@ function init(): void {
     }
 
 
+//    Pop-Up-Fenster av 
 
+    var j: boolean = true;
+
+
+
+
+    function bild10(): void {
+        document.getElementById("popUpav").style.display = "none";
+        if (j == false) {
+            document.getElementById("popUpav").style.display = "none";
+            document.getElementById("avbox").style.backgroundColor = "#363636";
+            j = true;
+        }
+        else {
+            document.getElementById("popUpav").style.display = "block";
+            document.getElementById("avbox").style.backgroundColor = "#282828";
+            j = false;
+
+        }
+    }
+    //    popupFenster schließen 
+
+    function bild10c(): void {
+        document.getElementById("popUpav").style.display = "none";
+        document.getElementById("avbox").style.backgroundColor = "#363636";
+        j = true;
+    }
 
 
 

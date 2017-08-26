@@ -334,7 +334,13 @@ li a img{
   text-decoration: none;
   cursor: pointer;
 }
-
+.youtubeVideos{
+	margin-left:20%;
+	margin-right:20%;
+	margin-bottom:10px;
+	width:180px;
+	height:150px;
+}
 
 .boxQGr{
 	margin-left:20%;
@@ -349,6 +355,7 @@ li a img{
 	width:40%;
 
 }
+
 .boxTextZusatz{
 	margin-left:auto;
 	margin-right:auto;
@@ -671,6 +678,10 @@ background-color: #282828;
 .boxTextOut{
 	font-size:90%;
 }
+.youtubeVideos{
+	width:234px;
+	height:195px;
+}
 
 }
 
@@ -696,7 +707,7 @@ background-color: #282828;
 	}
 	.boxHOut{
 	height:230px;
-float:left;
+	float:left;
 	width: 20%;
 }
 .boxQOut{
@@ -776,8 +787,12 @@ float:left;
 	position: relative;
 	z-index:100;
 }
-
-.popUp{float: left;
+.youtubeVideos{
+	width:396px;
+	height:330px;
+}
+.popUp{
+	float: left;
 	width: 100%;
 	background-color: #282828;
 	box-shadow: 2px 2px 5px black;
@@ -876,7 +891,7 @@ float:left;
 		position: absolute;
 	}
 	
-	
+
 /*---------------------------------------*/
 /*Main*/
 
@@ -893,6 +908,10 @@ float:left;
 	margin-left:35%;
 	margin-right:auto;
 	width:300px;
+}
+.youtubeVideos{
+	width:522px;
+	height:435px;
 }
 .boxHOut{
 	height:300px;
@@ -1010,6 +1029,13 @@ float:left;
 .BoxQuadratPh{
 	width: 25%;	
 }
+.youtubeVideos{
+	width:504px;
+	height:420px;
+}
+.youtubeVideos{
+margin-left:30%;
+}
 #ente {
 	clear:none;
 }
@@ -1061,6 +1087,9 @@ float:left;
 	height:500px;
 }
 
+.youtubeVideos{
+	margin-left:38%;
+}
 }
 
 
