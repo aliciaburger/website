@@ -714,11 +714,13 @@ background-color: #282828;
 	height:230px;
 	float:left;
 	width: 40%;
+	margin-top:120px;
 }
 .bees{
 	height:230px;
-	float:left;
+	clear:left;
 	width: 30%;
+    margin-top:55px;
 }
 .boxHoch{
 	width: 90%;
@@ -1019,6 +1021,7 @@ background-color: #282828;
 }
 .bees{
 	height:300px;
+	  margin-top:65px;
 }
 .boxHochPh{
 	width: 23%;
@@ -1055,6 +1058,7 @@ margin-left:30%;
 }
 .bees{
 	height:370px;
+	margin-top:160px;
 }
 .boxHochPh{
 	width: 23%;
@@ -1085,13 +1089,22 @@ margin-left:30%;
 }
 .bees{
 	height:500px;
+	margin-top:240px;
 }
 
 .youtubeVideos{
 	margin-left:38%;
 }
 }
+@media screen and (min-width:  1840px){
+	.bees{
+	height:500px;
+	margin-top:320px;
+}
+.boxQOut{
+	margin-top:80px;
 
-
+}
+}
 
 
