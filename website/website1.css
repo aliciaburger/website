@@ -112,6 +112,9 @@ li a img{
 }
 #ankerPortfolio{position: relative;
 }
+.downloadlink{
+	color: #01c6ff !important;
+}
 
 /*---------------------------------------*/
 	/*Überschriften*/
@@ -539,7 +542,16 @@ margin-bottom:2.5%;
 	color: #a3a3a3;
 	float:left;
 }
-
+#myWebsite{
+	width: 95%;
+	margin:2.5%;
+	margin-left:10px;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:120%;
+	text-align:center;
+	color: #01c6ff;
+	
+}
 #listenDiv{
 	float: left;
 	 margin-left: auto;
@@ -829,7 +841,9 @@ background-color: #282828;
 #aboutDiv{
 	font-size:150%;
 }
-
+#myWebsite{
+	font-size:150%;
+}
 #semester1{
 	margin-top:200px;
 	
@@ -966,6 +980,12 @@ background-color: #282828;
 	font-size:150%;
 	text-align:center;
 
+}
+#myWebsite{
+/* 	width: 65%; */
+	margin:2.5%;
+	font-size:150%;
+/* 	text-align:center; */
 }
 #ankerAbout{
 	margin-top:20px;
