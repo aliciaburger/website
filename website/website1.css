@@ -220,7 +220,7 @@ li a img{
 }
 .popUp{
 	width: 100%;
-/* 	height:100%; */
+	height:100%;
 	background-color: #282828 !important;
 	box-shadow: 2px 2px 5px black;
 	display: none;	
@@ -359,13 +359,14 @@ li a img{
 
 }
 
+
 .boxTextZusatz{
 	margin-left:auto;
 	margin-right:auto;
-	width:70%;
+	width:75%;
 
-	margin-bottom:10px;
-	font-family: Candara, 'Hind Siliguri', sans-serif;
+	margin-bottom:0px;
+		font-family: Candara, 'Hind Siliguri', sans-serif;
 	font-size:75%;
 	text-align:center;
 	color: #a3a3a3;
@@ -374,10 +375,10 @@ li a img{
 	margin-left:auto;
 	margin-right:auto;
 	width:70%;
-	margin-top:20px;
+	margin-top:10px;
 	margin-bottom:10px;
 	font-family: Candara, 'Hind Siliguri', sans-serif;
-	font-size:75%;
+	font-size:70%;
 	text-align:center;
 	color: #a3a3a3;
 }
@@ -727,7 +728,7 @@ background-color: #282828;
 	height:230px;
 	float:left;
 	width: 40%;
-	margin-top:120px;
+	
 }
 .bees{
 	height:230px;
@@ -802,6 +803,12 @@ background-color: #282828;
 	position: relative;
 	z-index:100;
 }
+#typoBox{
+	margin-top:120px;
+}
+#shopbox{
+	margin-top:120px;
+}
 .youtubeVideos{
 	width:396px;
 	height:330px;
@@ -846,7 +853,7 @@ background-color: #282828;
 	font-size:150%;
 }
 #semester1{
-	margin-top:200px;
+	margin-top:80px;
 	
 }	
 	/*---------------------------------------*/
@@ -994,7 +1001,7 @@ background-color: #282828;
 
 	}
 #semester1{
-	margin-top:150px;
+	margin-top:100px;
 	
 }	
 
@@ -1090,10 +1097,7 @@ margin-left:30%;
 .BoxQuadratPh{
 	width: 25%;
 }
-#semester1{
-	margin-top:220px;
 	
-}	
 /* ----------------------------------------------------------------------- */
 @media screen and (min-width:  1590px){
 
@@ -1126,6 +1130,22 @@ margin-left:30%;
 	margin-top:80px;
 
 }
+
+#typogr{
+	margin-top:270px;
 }
-
-
+#bee{
+	margin-top: 200px;
+}
+#shop{
+	margin-top: 100px;
+}
+#photos{
+	margin-top: 450px;
+}
+}
+@media screen and (min-width:  2000px){
+	#semester1{
+	margin-top:170px;	
+}
+}
