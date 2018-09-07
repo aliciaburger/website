@@ -41,6 +41,10 @@ function init() {
     document.getElementById("cl9").addEventListener("click", bild9c);
     document.getElementById("av").addEventListener("click", bild10);
     document.getElementById("cl10").addEventListener("click", bild10c);
+    document.getElementById("oer").addEventListener("click", bild11);
+    document.getElementById("cl11").addEventListener("click", bild11c);
+    document.getElementById("mb").addEventListener("click", bild12);
+    document.getElementById("cl12").addEventListener("click", bild12c);
 }
 /* BurgerMenu */
 function burgerMenue() {
@@ -283,6 +287,48 @@ function bild10c() {
     document.getElementById("popUpav").style.display = "none";
     document.getElementById("avbox").style.backgroundColor = "#363636";
     j = true;
+}
+//    Pop-Up-Fenster oer 
+var k = true;
+function bild11() {
+    document.getElementById("popUpoer").style.display = "none";
+    if (k == false) {
+        document.getElementById("popUpoer").style.display = "none";
+        document.getElementById("oerbox").style.backgroundColor = "#363636";
+        k = true;
+    }
+    else {
+        document.getElementById("popUpoer").style.display = "block";
+        document.getElementById("oerbox").style.backgroundColor = "#282828";
+        k = false;
+    }
+}
+//    popupFenster schließen 
+function bild11c() {
+    document.getElementById("popUpoer").style.display = "none";
+    document.getElementById("oerbox").style.backgroundColor = "#363636";
+    k = true;
+}
+//    Pop-Up-Fenster schreinerei MB 
+var l = true;
+function bild12() {
+    document.getElementById("popUpmb").style.display = "none";
+    if (l == false) {
+        document.getElementById("popUpmb").style.display = "none";
+        document.getElementById("mbbox").style.backgroundColor = "#363636";
+        l = true;
+    }
+    else {
+        document.getElementById("popUpmb").style.display = "block";
+        document.getElementById("mbbox").style.backgroundColor = "#282828";
+        l = false;
+    }
+}
+//    popupFenster schließen 
+function bild12c() {
+    document.getElementById("popUpmb").style.display = "none";
+    document.getElementById("mbbox").style.backgroundColor = "#363636";
+    l = true;
 }
 //        document.getElementById("burger").addEventListener("mouseover", burgerBlau);
 //        document.getElementById("burger").addEventListener("click", burgerBlau);

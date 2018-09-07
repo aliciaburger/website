@@ -99,16 +99,87 @@ nicht kopiert und auch nicht diktiert -->
 		<div class="shadow">
 			<p class="ueberschriftGr" id="projects">PROJECTS</p>
 			
+			<p class="semesterZahl">Out of University</p>
+			
+			</div>
+			
+<!-- 		-------------------------------------- -->
+				<!-- Schreinerei MB-Box -->
+
+ 			<div class="boxQOut"> 
+			<div id="mbbox">
+				<div>
+					<a href="#mb"><img src="Bilder/Papa und ich.PNG"
+						class="boxQuer" id="mb"/></a>
+						<div class="boxText">
+							<p> Corporate Video </p>
+						</div>
+				</div>
+				<div id="popUpmb" class="popUp">
+					<div class="modal-content">
+						<span class="close cursor" id="cl12">&times;</span>					
+						
+						<div class="anzahl12 fade">		
+						<div class="numbertext">1 / 6</div>
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/5DZdgQVV-CA" frameborder="0" allowfullscreen></iframe>						
+							<div class="boxText">
+							<p> Werbeclip über das Unternehmen Schreinerei Manfred Burger </p>
+							</div> 						 														 
+						</div>											
+							
+						<div class="anzahl12 fade">
+							<div class="numbertext">2 / 6</div>
+							<img src="Bilder/Screenshot-Roh-Schnitt.jpg" class="boxQGr" />
+							<p class="boxTextZusatz">Roh-Schnitt</p>							
+						</div>
+						<div class="anzahl12 fade">
+							<div class="numbertext">3 / 6</div>
+							<img src="Bilder/looks.jpg" class="boxQGr" />
+							<p class="boxTextZusatz">Farbkorrektur</p>							
+						</div>
+						<div class="anzahl12 fade">
+							<div class="numbertext">4 / 6</div>
+							<img src="Bilder/Papa und ich.PNG" class="boxQGr" />
+							<p class="boxTextZusatz">Standbild</p>							
+						</div>	
+						<div class="anzahl12 fade">
+							<div class="numbertext">5 / 6</div>
+							<img src="Bilder/Zeichnung.PNG" class="boxQGr" />
+							<p class="boxTextZusatz">Detailaufnahme</p>							
+						</div>
+						<div class="anzahl12 fade">
+							<div class="numbertext">6 / 6</div>
+							<img src="Bilder/Hobel.PNG" class="boxQGr" />
+							<p class="boxTextZusatz">Detailaufnahme</p>							
+						</div>	
+ 						<a class="prev" onclick="plusSlides12(-1)">&#10094;</a>  
+						<a class="next" onclick="plusSlides12(1)">&#10095;</a> 
+					</div>
+					<div class="punkt">
+ 						<span class="dot" class="dot12" onclick="nSlide12(1)"></span> 
+ 						<span class="dot" class="dot12" onclick="nSlide12(2)"></span>  
+						<span class="dot" class="dot12" onclick="nSlide12(3)"></span> 
+						<span class="dot" class="dot12" onclick="nSlide12(4)"></span> 
+						<span class="dot" class="dot12" onclick="nSlide12(5)"></span> 
+						<span class="dot" class="dot12" onclick="nSlide12(6)"></span> 
+
+					</div>
+	
+				</div>
+ 				</div>
+ 			</div> 
+		<!-- 		-------------------------------------- -->
+		
+		
+					
 			<p class="semesterZahl">2.SEMESTER</p>
 			
 			</div>
 			
-				
-		
 		
 <!-- 		-------------------------------------- -->
 
-
+				
 <!-- AVBox -->
  			<div class="boxQOut"> 
 			<div id="avbox" class="avF">
@@ -215,7 +286,7 @@ nicht kopiert und auch nicht diktiert -->
 	
 				</div>
 			</div> 
-			</div> 
+			 
 
 
 
@@ -464,6 +535,40 @@ nicht kopiert und auch nicht diktiert -->
 	
 				</div>
  			</div> 
+
+<!-- OER-Box -->
+ 			<div class="boxQOut"> 
+			<div id="oerbox" class="oers">
+				<div>
+					<a href="#oer"><img src="Bilder/oer.PNG"
+						class="boxQuer" id="oer" /></a>
+						<div class="boxText">
+							<p> Infographic about OER </p>
+						</div>
+				</div>
+				<div id="popUpoer" class="popUp">
+					<div class="modal-content">
+						<span class="close cursor" id="cl11">&times;</span>					
+						</div>
+						<div class="anzahl11 fade">		
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/k-c-6g5RdPg" frameborder="0" allowfullscreen></iframe>						
+							<div class="boxText">
+							<p> Infographic über OER </p>
+							</div> 						 														 
+						</div>											
+						
+						
+<!-- 						<a class="prev" onclick="plusSlides8(-1)">&#10094;</a>  -->
+<!-- 						<a class="next" onclick="plusSlides8(1)">&#10095;</a> -->
+
+					</div>
+					<div class="punkt">
+<!-- 						<span class="dot" class="dot8" onclick="nSlide8(1)"></span> <span -->
+<!-- 							class="dot" class="dot8" onclick="nSlide8(2)"></span>  -->
+					</div>
+	
+				</div>
+ 			</div>  			
 		<!-- 		-------------------------------------- -->	
 			
 			
@@ -921,7 +1026,7 @@ nicht kopiert und auch nicht diktiert -->
 					 alicia.burger_     </a>
 			</div>
 			<div id="facebook"class="footerText" >
-				<a href="https://www.facebook.com/alicia.burger.77">
+				<a href="https://www.facebook.com/alicia.burger.97">
 					<img src="Bilder/facebookIcon.png" id="facebookIcon" />
 					 Alicia Burger</a>
 			</div>
@@ -1328,8 +1433,82 @@ nicht kopiert und auch nicht diktiert -->
                  dots10[slide10 - 1].className += "active";
 
              }   
-            
-			
+// Slideshow OER
+             var slide11 = 1;
+             var n11 = 1;
+             document.getElementById("oer").addEventListener("click", oer);
+             function oer() {
+                 showSlides11(slide11);
+                 nSlide11(n11);
+             }
+
+             
+
+             function plusSlides11(n11) {
+                 showSlides11(slide11 += n11);
+                 console.log("plusSlides11", n11);
+             }
+
+
+             function nSlide11(n11) {
+                 showSlides11(slide11 = n11);
+                 console.log("nSlide11", n11);
+             }
+
+             function showSlides11(n11) {
+                 console.log("showSlides11", n11);
+                 var h;
+                 var anzahl11 = document.getElementsByClassName("anzahl11");
+                 var dots11 = document.getElementsByClassName("dot11");
+                 if (n11 > anzahl11.length) { slide11 = 1 }
+                 if (n11 < 1) { slide11 = anzahl11.length }
+
+                 for (h = 0; h < anzahl11.length; h++) {
+                     anzahl11[h].style.display = "none";
+
+                 }
+                 anzahl11[slide11 - 1].style.display = "block";
+                 dots11[slide11 - 1].className += "active";
+
+             }   
+// Slideshow Schreineri MB
+             var slide12 = 1;
+             var n12 = 1;
+             document.getElementById("mb").addEventListener("click", mb);
+             function mb() {
+                 showSlides12(slide12);
+                 nSlide12(n12);
+             }
+
+             
+
+             function plusSlides12(n12) {
+                 showSlides12(slide12 += n12);
+                 console.log("plusSlides12", n12);
+             }
+
+
+             function nSlide12(n12) {
+                 showSlides12(slide12 = n12);
+                 console.log("nSlide12", n12);
+             }
+
+             function showSlides12(n12) {
+                 console.log("showSlides12", n12);
+                 var h;
+                 var anzahl12 = document.getElementsByClassName("anzahl12");
+                 var dots12 = document.getElementsByClassName("dot12");
+                 if (n12 > anzahl12.length) { slide12 = 1 }
+                 if (n12 < 1) { slide12 = anzahl12.length }
+
+                 for (h = 0; h < anzahl12.length; h++) {
+                     anzahl12[h].style.display = "none";
+
+                 }
+                 anzahl12[slide12 - 1].style.display = "block";
+                 dots12[slide12 - 1].className += "active";
+
+             }                
  	</script> 
     </body>
 </html>
