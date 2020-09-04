@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Alicia Burger Portfolio</title>
+         <link rel="stylesheet" type="text/css" href="website1.css">
+      <script src="website.js"></script>
+    </head>
+    
+    <body>
+    
+						<div class="modal-content">
+
+						<a href="index.html#projSect">
+							<span class="close cursor" >&times;</span>
+						</a>
+
+						<div class="anzahl fade">
+							<div class="numbertext">1 / 2</div>
+							<img src="Bilder/Hochschulball plakat 1.jpg" class="boxHGr" />
+							<p class="boxTextZusatz">Aufgabe: Nur in Schwarz Weis mit Edding. </p>
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">2 / 2</div>
+							<img src="Bilder/Hochschulball-plakat-2.png" class="boxHGr" />
+							<p class="boxTextZusatz">Aufgabe: Nur in Schwarz Weis mit Edding. </p>
+						</div>
+						
+						<div class="boxText">
+						<p>Plakat Design für den Hochschulball zum Thema Kirmes. (Teamwork)</p>
+					</div>
+						
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a
+							class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div>
+					<br>
+					<div class="punkt">
+						<span class="dot" onclick="currentSlide(1)"></span> <span
+							class="dot" onclick="currentSlide(2)"></span>
+					</div>
+										
+														   													
+		<script>		
+			// Slideshow 
+   		      
+           
+              var slideIndex = 1;
+             showSlides(slideIndex);
+
+             function plusSlides(n) {
+               showSlides(slideIndex += n);
+             }
+
+             function currentSlide(n) {
+               showSlides(slideIndex = n);
+             }
+
+             function showSlides(n) {
+               var i;
+               var slides = document.getElementsByClassName("anzahl");
+               var dots = document.getElementsByClassName("dot");
+               if (n > slides.length) {slideIndex = 1}    
+               if (n < 1) {slideIndex = slides.length}
+               for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+               }
+               for (i = 0; i < dots.length; i++) {
+                   dots[i].className = dots[i].className.replace(" active", "");
+               }
+               slides[slideIndex-1].style.display = "block";  
+               dots[slideIndex-1].className += " active";
+             }      
+             
+        </script>
+            			
+    </body>
+  </html>   

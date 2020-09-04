@@ -1,0 +1,135 @@
+ <!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Alicia Burger Portfolio</title>
+         <link rel="stylesheet" type="text/css" href="website1.css">
+      <script src="website.js"></script>
+    </head>
+    
+    <body>
+    		<div class="modal-content">
+
+						<a href="index.html#projSect">
+							<span class="close cursor" >&times;</span>
+						</a>
+
+						<div class="anzahl fade">
+							<div class="numbertext">1 / 10</div>
+							
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/svnelQ7j-Nw?rel=0" frameborder="0" allowfullscreen></iframe>
+
+							<div class="boxTextZusatz">
+							    Abschlussaufgabe: Animiertes Video mit bewegten Kameras  
+<!-- 							    <a href="https://youtu.be/svnelQ7j-Nw"> Hier der You Tube Link dazu</a> -->
+								
+							</div> 
+								 
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">2 / 10</div>
+							<img src="Bilder/cg/CG1.jpg" class="boxHGr" />
+							<p class="boxTextZusatz">Übersicht einiger Modelle mit Toon Shader im Comic Style</p>							
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">3 / 10</div>
+							<img src="Bilder/cg/CG2.PNG" class="boxHGr" />
+							<p class="boxTextZusatz">Fotorealistische Modellierung von R4 aus Star Wars</p>
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">4 / 10</div>
+							<img src="Bilder/cg/CG3.PNG" class="boxQGr" />
+							<p class="boxTextZusatz">Partikel Animation, Alien mit Clay Modeling</p>
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">5 / 10</div>
+							<img src="Bilder/cg/CG4.PNG" class="boxQGr" />
+							<p class="boxTextZusatz">Raumhafen mit simplen Meshes</p>
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">6 / 10</div>
+							<img src="Bilder/cg/CG5.jpg" class="boxHGr" />
+							<p class="boxTextZusatz">Sculpting von Modellen</p>
+							
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">7 / 10</div>
+							<img src="Bilder/cg/CG6.PNG" class="boxQGr" />
+							<p class="boxTextZusatz">Raumschiffe mit Surface Modeling</p>
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">8 / 10</div>
+							<img src="Bilder/cg/CG7.jpg" class="boxHGr" />
+							<p class="boxTextZusatz">Pflanze mit Clay Modeling, beide Mit Toon Shader im Comic Style</p>
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">9 / 10</div>
+							<img src="Bilder/cg/CG8.PNG" class="boxQGr" />
+							<p class="boxTextZusatz">Polygon Modeling ( Gesicht von Jabba the Hutt aus Star Wars)</p>
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">10 / 10</div>
+							<img src="Bilder/cg/CG9.PNG" class="boxQGr" />
+							<p class="boxTextZusatz">Modellierung mehrerer Droiden</p>
+						</div>
+						<div class="boxText">
+						<p>Verschiedene 3D Modelle und Animationen 
+						mit "Blender" für den Kurs Computergafik und 3D Moddelierung </p>
+					</div>
+						
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a
+							class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div>
+
+					<div class="punkt">
+						<span class="dot" onclick="currentSlide(1)"></span> <span
+							class="dot" onclick="currentSlide(2)"></span> <span
+							class="dot" onclick="currentSlide(3)"></span> <span
+							class="dot" onclick="currentSlide(4)"></span> <span
+							class="dot" onclick="currentSlide(5)"></span>
+					  <span class="dot" onclick="currentSlide(6)"></span>
+					  <span class="dot" onclick="currentSlide(7)"></span>
+					  <span class="dot" onclick="currentSlide(8)"></span>
+					  <span class="dot" onclick="currentSlide(9)"></span>
+					  <span class="dot" onclick="currentSlide(10)"></span>
+					</div>
+					
+					
+													   													
+		<script>		
+			// Slideshow 
+   		      
+           
+              var slideIndex = 1;
+             showSlides(slideIndex);
+
+             function plusSlides(n) {
+               showSlides(slideIndex += n);
+             }
+
+             function currentSlide(n) {
+               showSlides(slideIndex = n);
+             }
+
+             function showSlides(n) {
+               var i;
+               var slides = document.getElementsByClassName("anzahl");
+               var dots = document.getElementsByClassName("dot");
+               if (n > slides.length) {slideIndex = 1}    
+               if (n < 1) {slideIndex = slides.length}
+               for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+               }
+               for (i = 0; i < dots.length; i++) {
+                   dots[i].className = dots[i].className.replace(" active", "");
+               }
+               slides[slideIndex-1].style.display = "block";  
+               dots[slideIndex-1].className += " active";
+               setTimeout(plusSlides, 3000); // Change image every 2 seconds
+             }      
+             
+        </script>
+            			
+    </body>
+  </html>   

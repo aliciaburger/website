@@ -1,0 +1,121 @@
+ <!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Alicia Burger Portfolio</title>
+         <link rel="stylesheet" type="text/css" href="website1.css">
+      <script src="website.js"></script>
+    </head>
+    
+    <body>
+    	
+					<div class="modal-content">
+
+						<a href="index.html#projSect">
+							<span class="close cursor" >&times;</span>
+						</a>
+
+						<div class="anzahl fade">
+							<div class="numbertext">1 / 8</div>	
+								<iframe class="youtubeVideos" src="https://www.youtube.com/embed/SO7ebJ_bZ_I?rel=0" frameborder="0" allowfullscreen></iframe>				
+
+								
+							<p class="boxTextZusatz">Video zur benutzung der Website.
+<!-- 							<a href="https://youtu.be/SO7ebJ_bZ_I" >Hier der youtube Link dazu</a> -->
+							</p>
+						</div>
+						
+						<div class="anzahl fade">
+							<div class="numbertext">2 / 8</div>
+							<img src="Bilder/UX/ux2.png" class="boxHGr" />
+							<p class="boxTextZusatz">Mockup der Website, mit Adobe Experience Design</p>		
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">3 / 8</div>
+							<img src="Bilder/UX/ux3.png" class="boxHGr" />
+							<p class="boxTextZusatz">Mockup der Website, mit Adobe Experience Design</p>	
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">4 / 8</div>
+							<img src="Bilder/UX/ux4.png" class="boxHGr" />
+							<p class="boxTextZusatz">Mockup der Website, mit Adobe Experience Design</p>
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">5 / 8</div>
+							<img src="Bilder/UX/ux5.jpg" class="boxQGr" />
+							<p class="boxTextZusatz">Storyboard zur Nutzung </p>
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">6 / 8</div>
+							<img src="Bilder/UX/ux6.png" class="boxQGr" />
+							<p class="boxTextZusatz">Finaler Plakatentwurf</p>
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">7 / 8</div>
+							<img src="Bilder/UX/ux7.jpg" class="boxHGr" />
+							<p class="boxTextZusatz">Erster Plakatentwurf</p>
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">8 / 8</div>
+							<img src="Bilder/UX/ux8.png" class="boxQGr" />
+							<p class="boxTextZusatz">Nutzungskontext Analyse</p>
+						</div>
+						
+						
+						<div class="boxText">
+						<p> Konzept einer Website, für eine fiktive Traumstadt (Teamwork)
+						<a class="farbigerLink" href="https://xd.adobe.com/view/40a9b630-d9db-4c60-a7a3-f4eede08950a/">Hier gehts zum Prototype</a></p>
+					</div>
+						
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a
+							class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div>
+
+					<div class="punkt">
+						<span class="dot" onclick="currentSlide(1)"></span> <span
+							class="dot" onclick="currentSlide(2)"></span> <span
+							class="dot" onclick="currentSlide(3)"></span> <span
+							class="dot" onclick="currentSlide(4)"></span> <span
+							class="dot" onclick="currentSlide(5)"></span>
+					  <span class="dot" onclick="currentSlide(6)"></span>
+					  <span class="dot" onclick="currentSlide(7)"></span>
+					  <span class="dot" onclick="currentSlide(8)"></span>
+					</div>
+				
+														   													
+		<script>		
+			// Slideshow 
+   		      
+           
+              var slideIndex = 1;
+             showSlides(slideIndex);
+
+             function plusSlides(n) {
+               showSlides(slideIndex += n);
+             }
+
+             function currentSlide(n) {
+               showSlides(slideIndex = n);
+             }
+
+             function showSlides(n) {
+               var i;
+               var slides = document.getElementsByClassName("anzahl");
+               var dots = document.getElementsByClassName("dot");
+               if (n > slides.length) {slideIndex = 1}    
+               if (n < 1) {slideIndex = slides.length}
+               for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+               }
+               for (i = 0; i < dots.length; i++) {
+                   dots[i].className = dots[i].className.replace(" active", "");
+               }
+               slides[slideIndex-1].style.display = "block";  
+               dots[slideIndex-1].className += " active";
+             }      
+             
+        </script>
+            			
+    </body>
+  </html>   

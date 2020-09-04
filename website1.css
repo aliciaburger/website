@@ -183,7 +183,22 @@ li a img{
 #projects{
 	margin-bottom:10px;
 }
+.projectbox {
+  position: relative;
+  display: block;
+  float: left;
+  z-index: 100;
+  width: 33%;
+  
+}
+.projectimage {
+  display: block;
+  float:left;
+  width: 100%;
+  height: auto;
+  /* max-height:300px; */
 
+}
 .boxHoch{
 	width: 65%;
 	margin-top:40px;
@@ -298,6 +313,7 @@ li a img{
 	text-align: center;
 	margin-bottom:50px;
 }
+
 .active, .dot:hover {
   background-color: #01c6ff;
 }
@@ -396,7 +412,6 @@ li a img{
 
 .boxHoch{
 	width: 65%;
-	
 	margin-top:40px;
 	display: block;
     margin-left: auto;
@@ -948,12 +963,8 @@ background-color: #282828;
 .bees{
 	height:200px;
 }
-
 .boxHoch{
 	width: 90%;
-	
-
-
 }
 .boxQuer{
 	width: 95%;
