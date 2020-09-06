@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Alicia Burger Portfolio</title>
+         <link rel="stylesheet" type="text/css" href="website1.css">
+      <script src="website.js"></script>
+    </head>
+    
+    <body>
+    
+    		 <div class="modal-content">
+
+						<a href="index.html#projSect">
+							<span class="close cursor" >&times;</span>
+						</a>
+
+						<div class="anzahl fade">
+							<div class="numbertext">1 / 8</div>
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/KlbULYFMJUo" frameborder="0" allowfullscreen></iframe>				
+						<p class="boxTextZusatz">Schnitt, colour grading, Sound</p>
+					
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">2 / 8</div>
+							
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/t7HvYekPZ98" frameborder="0" allowfullscreen></iframe>				
+							<p class="boxTextZusatz">Kameraasistenz, Schnitt, colour grading, Sound</p>
+							</div>
+
+						<div class="anzahl fade">
+							<div class="numbertext">3 / 8</div>
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/n-r_UmBh4Xs" frameborder="0" allowfullscreen></iframe>				
+						<p class="boxTextZusatz">Schnitt, colour grading, Sprecher, Sound </p>
+						</div> 
+					
+					<div class="anzahl fade">
+							<div class="numbertext">4 / 8</div>
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/bt4Vbtdngrc" frameborder="0" allowfullscreen></iframe>				
+						<p class="boxTextZusatz">Schnitt, colour grading, Sound</p>
+						</div> 
+
+					<div class="anzahl fade">
+							<div class="numbertext">5 / 8</div>
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/ANd7AKBsQ4w" frameborder="0" allowfullscreen></iframe>				
+						<p class="boxTextZusatz">Schnitt, colour grading, Sound</p>
+						</div> 
+					<div class="anzahl fade">
+							<div class="numbertext">6 / 8</div>
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/1OYgDpVPM5M" frameborder="0" allowfullscreen></iframe>				
+						<p class="boxTextZusatz">Schnitt, colour grading, Sound</p>
+						</div> 
+						
+					<div class="anzahl fade">
+							<div class="numbertext">7 / 8</div>
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/QzaFzpo1gTg" frameborder="0" allowfullscreen></iframe>				
+						<p class="boxTextZusatz">Kameraassistenz</p>
+						</div> 
+						
+					<div class="anzahl fade">
+							<div class="numbertext">8 / 8</div>
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/QU_ofwop5S4" frameborder="0" allowfullscreen></iframe>				
+						<p class="boxTextZusatz">Kameraassistenz</p>
+						</div> 
+					
+					
+
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a> 
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<div class="punkt">
+						<span class="dot" onclick="currentSlide(1)"></span> <span
+							class="dot" onclick="currentSlide(2)"></span> 
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						<span class="dot" onclick="currentSlide(5)"></span>	
+						<span class="dot" onclick="currentSlide(6)"></span>
+						<span class="dot" onclick="currentSlide(7)"></span>
+						<span class="dot" onclick="currentSlide(8)"></span>	
+					</div>
+										
+														   													
+		<script>		
+			// Slideshow 
+   		      
+           
+              var slideIndex = 1;
+             showSlides(slideIndex);
+
+             function plusSlides(n) {
+               showSlides(slideIndex += n);
+             }
+
+             function currentSlide(n) {
+               showSlides(slideIndex = n);
+             }
+
+             function showSlides(n) {
+               var i;
+               var slides = document.getElementsByClassName("anzahl");
+               var dots = document.getElementsByClassName("dot");
+               if (n > slides.length) {slideIndex = 1}    
+               if (n < 1) {slideIndex = slides.length}
+               for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+               }
+               for (i = 0; i < dots.length; i++) {
+                   dots[i].className = dots[i].className.replace(" active", "");
+               }
+               slides[slideIndex-1].style.display = "block";  
+               dots[slideIndex-1].className += " active";
+             }      
+             
+        </script>
+            			
+    </body>
+  </html>   

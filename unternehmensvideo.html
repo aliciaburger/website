@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Alicia Burger Portfolio</title>
+         <link rel="stylesheet" type="text/css" href="website1.css">
+      <script src="website.js"></script>
+    </head>
+    
+    <body>
+    
+    		 <div class="modal-content">
+    		 			<a href="index.html#projSect">
+							<span class="close cursor" >&times;</span>
+						</a>
+
+						<div class="anzahl fade">		
+						<div class="numbertext">1 / 5</div>
+							<iframe class="youtubeVideos" src="https://www.youtube.com/embed/5DZdgQVV-CA" frameborder="0" allowfullscreen></iframe>						
+							<div class="boxText">
+							<p> Werbeclip über das Unternehmen Schreinerei Manfred Burger </p>
+							</div> 						 														 
+						</div>											
+							
+						<div class="anzahl fade">
+							<div class="numbertext">2 / 5</div>
+							<img src="Bilder/Screenshot-Roh-Schnitt.jpg" class="boxQGr" />
+							<p class="boxTextZusatz">Roh-Schnitt</p>							
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">3 / 5</div>
+							<img src="Bilder/looks.jpg" class="boxQGr" />
+							<p class="boxTextZusatz">Farbkorrektur</p>							
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">4 / 5</div>
+							<img src="Bilder/Zeichnung.PNG" class="boxQGr" />
+							<p class="boxTextZusatz">Detailaufnahme</p>							
+						</div>
+						<div class="anzahl fade">
+							<div class="numbertext">5 / 5</div>
+							<img src="Bilder/Hobel.PNG" class="boxQGr" />
+							<p class="boxTextZusatz">Detailaufnahme</p>							
+						</div>	
+						<div class="boxText">
+						
+						<p> Kameraasistenz, Darsteller, Schnitt, colour grading, Text, Sprecher, Sound</p>
+						</div>
+						
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a> 
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						
+					</div>
+					
+					<div class="punkt">
+						<span class="dot" onclick="currentSlide(1)"></span> <span
+							class="dot" onclick="currentSlide(2)"></span> 
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						<span class="dot" onclick="currentSlide(5)"></span>	
+						
+					</div>
+										
+														   													
+		<script>		
+			// Slideshow 
+   		      
+           
+              var slideIndex = 1;
+             showSlides(slideIndex);
+
+             function plusSlides(n) {
+               showSlides(slideIndex += n);
+             }
+
+             function currentSlide(n) {
+               showSlides(slideIndex = n);
+             }
+
+             function showSlides(n) {
+               var i;
+               var slides = document.getElementsByClassName("anzahl");
+               var dots = document.getElementsByClassName("dot");
+               if (n > slides.length) {slideIndex = 1}    
+               if (n < 1) {slideIndex = slides.length}
+               for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+               }
+               for (i = 0; i < dots.length; i++) {
+                   dots[i].className = dots[i].className.replace(" active", "");
+               }
+               slides[slideIndex-1].style.display = "block";  
+               dots[slideIndex-1].className += " active";
+             }      
+             
+        </script>
+            			
+    </body>
+  </html>     			
+							
