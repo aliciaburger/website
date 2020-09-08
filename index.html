@@ -393,6 +393,8 @@
 									  </div>
 									</div>
 								</div> 
+								
+								
 								<div>
 										
 											<img src="Bilder/photos/Photo_1.PNG" class="boxQuerPh" />
@@ -575,9 +577,9 @@
  			    /*and another function when the mouse button is released:*/
  			    window.addEventListener("mouseup", slideFinish);
  			    /*or touched (for touch screens:*/
- 			    slider.addEventListener("touchstart", slideReady);
+ 			    slider.addEventListener("ontouchstart", slideReady);
  			    /*and released (for touch screens:*/
- 			    window.addEventListener("touchend", slideFinish);
+ 			    window.addEventListener("ontouchend", slideFinish);
  			    function slideReady(e) {
  			      /*prevent any other actions that may occur when moving over the image:*/
  			      e.preventDefault();
