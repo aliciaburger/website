@@ -171,6 +171,58 @@ li a img{
 /*---------------------------------------*/
 	/*photography + projects + about*/
 
+	* {box-sizing: border-box;}
+
+
+.rahmenbox {
+ box-shadow: 2px 2px 5px black;
+  position: relative;
+  height: 200px;
+  width:300px;/*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+}
+
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
+}
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 30px;
+  height: 30px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+.sliderbilder{
+	width:300px;
+	height:200px;
+	 /* z-index:100; */
+}	
+.boxQuerSl{
+    margin-top:40px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    width:90%;
+}
+
+
+	
+	
+	
+	
+	
+	
 	
 
 	
@@ -188,7 +240,7 @@ li a img{
   display: block;
   float: left;
   z-index: 100;
-  width: 33%;
+  width: 100%;
   
 }
 .projectimage {
@@ -201,6 +253,7 @@ li a img{
 }
 .boxHoch{
 	width: 65%;
+	margin: 15px;
 	margin-top:40px;
 	display: block;
     margin-left: auto;
@@ -208,7 +261,7 @@ li a img{
     box-shadow: 2px 2px 5px black;
 }
 .boxQuer{
-	width: 90%;
+	width: 100%;
 	margin-top:40px;
 	display: block;
     margin-left: auto;
@@ -216,7 +269,7 @@ li a img{
     box-shadow: 2px 2px 5px black;
 }
 .boxQuadrat{
-	width: 75%;
+	width: 20%;
 	margin-top:40px;
 	display: block;
     margin-left: auto;
@@ -290,7 +343,7 @@ li a img{
 	font-size:120%;
 	text-align:center;
 	color: #d7d7d7;
-	margin-left:20%;
+	left: 25px;
 	margin-top:15px;
   position: absolute;
   top: 0;
@@ -340,7 +393,6 @@ li a img{
   color: #d7d7d7;
   position: absolute;
 
-  margin-right:20%;
   top:8px;
   right: 25px;
   font-size: 35px;
@@ -357,6 +409,7 @@ li a img{
 	margin-left:20%;
 	margin-right:20%;
 	margin-bottom:10px;
+	margin-top:25px;
 	width:180px;
 	height:150px;
 }
@@ -365,14 +418,15 @@ li a img{
 	margin-left:20%;
 	margin-right:20%;
 	margin-bottom:10px;
+	margin-top:25px;
 	width:60%;
 }
 .boxHGr{
 	margin-left:30%;
 	margin-right:30%;
 	margin-bottom:10px;
+	margin-top:25px;
 	width:40%;
-
 }
 
 
@@ -390,11 +444,11 @@ li a img{
 .boxText{
 	margin-left:auto;
 	margin-right:auto;
-	width:70%;
+	width:70%
 	margin-top:10px;
 	margin-bottom:10px;
 	font-family: Candara, 'Hind Siliguri', sans-serif;
-	font-size:70%;
+	font-size:100%;
 	text-align:center;
 	color: #a3a3a3;
 }
@@ -410,30 +464,6 @@ li a img{
 	color: #a3a3a3;
 }
 
-.boxHoch{
-	width: 65%;
-	margin-top:40px;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 2px 2px 5px black;
-}
-.boxQuer{
-	width: 90%;
-	margin-top:40px;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 2px 2px 5px black;
-}
-.boxQuadrat{
-	width: 75%;
-	margin-top:40px;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 2px 2px 5px black;
-}
 .boxHochPh{
 	width: 65%;
 	
@@ -451,6 +481,7 @@ li a img{
     margin-right: auto;
     box-shadow: 2px 2px 5px black;
 }
+
 .boxQuadratPh{
 	width: 75%;
 	margin-top:40px;
@@ -698,9 +729,7 @@ background-color: #282828;
 .ueberschriftKl{	
 		font-size:1em;
 	}	
-.boxText{
-	font-size:90%;
-}
+
 .boxTextZusatz{
 	font-size:90%;
 }
@@ -751,16 +780,11 @@ background-color: #282828;
 	width: 30%;
     margin-top:55px;
 }
-.boxHoch{
-	width: 90%;
-	margin:15px;
-	margin-top:40px;
-	float: left;
-	position: relative;
-	z-index:100;
-
-
+.projectbox{
+	width:50%;
+	
 }
+
 .boxQuer{
 	width: 95%;
 	margin:15px;
@@ -769,24 +793,6 @@ background-color: #282828;
 	position: relative;
 	z-index:100;
 }
-.boxQuadrat{
-	width: 90%;
-	margin:2.5%;
-	margin-top:40px;
-	float: left;
-	position: relative;
-	z-index:100;
-}
-
-/* .boxHochPh{ */
-/* 	width: 65%; */
-	
-/* 	margin-top:40px; */
-/* 	display: block; */
-/*     margin-left: auto; */
-/*     margin-right: auto; */
-/*     box-shadow: 2px 2px 5px black; */
-/* } */
 
 .boxHochPh{
 	width:30%;
@@ -801,12 +807,16 @@ background-color: #282828;
 .boxQuerPh{
 	width: 45%;
 	margin:2.5%;
-	margin-top:40px;
 	float: left;
 	position: relative;
 	z-index:100;
 }
-
+.boxQuerSl{
+	width: 45%;
+	margin:2.5%;
+	position: relative;
+    float: left;
+}
 #ente {
 	clear:left;
 }
@@ -963,27 +973,23 @@ background-color: #282828;
 .bees{
 	height:200px;
 }
-.boxHoch{
-	width: 90%;
-}
-.boxQuer{
-	width: 95%;
+.projectbox{
+	width:33%;
 	
 }
-.BoxQuadrat{
-	width: 90%;
-	
-}
+
 .boxHochPh{
 	width: 20.5%;
 }
-.boxQuer{ph
+.boxQuerPh{
 	width: 42%;
 }
 .BoxQuadratPh{
 	width: 28%;
 }
-
+.boxQuerSl{
+	width: 42%;
+}
 .anker{
 	height:96px;
 }
@@ -1071,6 +1077,9 @@ background-color: #282828;
 .BoxQuadratPh{
 	width: 25%;	
 }
+.boxQuerSl{
+	width: 28%;
+}
 .youtubeVideos{
 	width:504px;
 	height:420px;
@@ -1099,15 +1108,7 @@ margin-left:30%;
 	height:370px;
 	margin-top:160px;
 }
-.boxHochPh{
-	width: 23%;
-}
-.boxQuerPh{
-	width: 28%;
-}
-.BoxQuadratPh{
-	width: 25%;
-}
+
 	
 /* ----------------------------------------------------------------------- */
 @media screen and (min-width:  1590px){
